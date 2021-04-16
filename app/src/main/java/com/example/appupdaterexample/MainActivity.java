@@ -27,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
         AppUpdater appUpdater = new AppUpdater(this)
                                         .setUpdateFrom(UpdateFrom.GITHUB)
                                         .setGitHubUserAndRepo("shashanksudheer", "AppUpdaterExample");
+
         appUpdater.start();
 
         FloatingActionButton fab = findViewById(R.id.fab);
